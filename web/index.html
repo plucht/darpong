@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pong ... pongpong ... pong ... PONG ...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+  </head>
+  <body>
+    <h2 id="text" class="animated tada">Pong</h2>
+
+    <section>
+      <canvas id="canvas" width="400" height="500">
+        Canvas is not supported in your browser.
+      </canvas>
+     
+      <footer>
+        <span>Round: <span id="round"></span> Level: <span id="level"></span></span>
+        
+          <button id="spielen" class="myButton">Play!</button>
+      </footer>
+      
+      <section>
+      <h3>Score:</h3>
+      <h4>Player</h4> <h2 id="playerScore"></h2>
+      <h4>Computer</h4> <h2 id="aiScore"></h2>
+      </section>
+    
+    </section>
+
+    <script type="application/dart" src="pongclient.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
